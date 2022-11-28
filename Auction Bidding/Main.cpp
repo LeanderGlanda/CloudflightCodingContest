@@ -21,16 +21,16 @@ struct my_bid {
 };
 
 struct my_current_state {
-	int bid;
+	struct my_bid bid;
 	int price;
 
-	my_current_state(int p_bid, int p_price)
+	my_current_state(struct my_bid p_bid, int p_price)
 		: bid(p_bid), price(p_price)
 	{
 	}
 	my_current_state()
 	{
-		bid = 0;
+		bid = { 0, "" };
 		price = 0;
 	}
 };
@@ -206,13 +206,13 @@ void level3(std::string input)
 	bool first_time = true;
 
 	//int last_highest_bid = current_price;
-	struct my_current_state current_state = { current_price, current_price };
+	struct my_current_state current_state = { {current_price, "-"}, current_price};
 
 	do
 	{
 		for (int i = 0; i < bids.size(); i++)
 		{
-			if (bids[i].bid < current_price)
+			/*if (bids[i].bid > current_state.price)
 			{
 				if (first_time)
 				{
@@ -222,10 +222,25 @@ void level3(std::string input)
 				}
 				else
 				{
-					current_state.bid = bids[i].bid;
 					current_state.price = current_state.bid + 1;
+					current_state.bid = bids[i].bid;
 				}
 				output << "," << bids[i].name << "," << current_state.price;
+				break;
+			}*/
+
+			/*if (bids[i].bid >= current_price)
+			{
+				current_price.price = ;
+				current_state.bid = bids[i];
+			}*/
+
+			if (bids[i].bid >= current_price && bids[i].bid != current_state.bid.bid && bids[i].name != current_state.bid.name)
+			{
+				current_state.bid = bids[i];
+				current_state.price = current_state.bid.bid;
+				output << "," << bids[i].name << "," << bids[i].bid;
+				break;
 			}
 		}
 

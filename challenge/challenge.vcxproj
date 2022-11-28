@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{bf6382ed-160e-4efa-97d0-0246c942e843}</ProjectGuid>
-    <RootNamespace>AuctionBidding</RootNamespace>
+    <ProjectGuid>{2f7783d0-3f89-4449-8b0a-d0528f79cdf3}</ProjectGuid>
+    <RootNamespace>challenge</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -140,6 +140,35 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\level1\level1_1.in" />
+    <None Include="..\..\..\..\Downloads\level1\level1_1.out" />
+    <None Include="..\..\..\..\Downloads\level1\level1_2.in" />
+    <None Include="..\..\..\..\Downloads\level1\level1_3.in" />
+    <None Include="..\..\..\..\Downloads\level1\level1_4.in" />
+    <None Include="..\..\..\..\Downloads\level1\level1_5.in" />
+    <None Include="..\..\..\..\Downloads\level1\level1_5.out" />
+    <None Include="..\..\..\..\Downloads\level1\level1_example - Kopie.out" />
+    <None Include="..\..\..\..\Downloads\level1\level1_example.in" />
+    <None Include="..\..\..\..\Downloads\level1\level1_example.out" />
+    <None Include="..\..\..\..\Downloads\level2\level2_1.in" />
+    <None Include="..\..\..\..\Downloads\level2\level2_1.out" />
+    <None Include="..\..\..\..\Downloads\level2\level2_2.in" />
+    <None Include="..\..\..\..\Downloads\level2\level2_3.in" />
+    <None Include="..\..\..\..\Downloads\level2\level2_4.in" />
+    <None Include="..\..\..\..\Downloads\level2\level2_5.in" />
+    <None Include="..\..\..\..\Downloads\level2\level2_example - Kopie.out" />
+    <None Include="..\..\..\..\Downloads\level2\level2_example.in" />
+    <None Include="..\..\..\..\Downloads\level2\level2_example.out" />
+    <None Include="..\..\..\..\Downloads\level3\level3_1.in" />
+    <None Include="..\..\..\..\Downloads\level3\level3_2.in" />
+    <None Include="..\..\..\..\Downloads\level3\level3_3.in" />
+    <None Include="..\..\..\..\Downloads\level3\level3_4.in" />
+    <None Include="..\..\..\..\Downloads\level3\level3_5.in" />
+    <None Include="..\..\..\..\Downloads\level3\level3_example - Kopie.out" />
+    <None Include="..\..\..\..\Downloads\level3\level3_example.in" />
+    <None Include="..\..\..\..\Downloads\level3\level3_example.out" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
